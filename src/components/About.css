@@ -1,0 +1,51 @@
+.shine-box {
+  background: #0ef;
+  color: #081b29;
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.shine-box:hover::before {
+  transform: rotate(25deg) translateX(100%);
+  transition: all 0.6s ease-in-out;
+}
+/* Skill block styling with your cyan shine effect */
+.services-list div {
+  background-color: #0a253a;
+  color: #ededed;
+  border: 1px solid #0ef;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  transition: 0.3s ease;
+}
+
+.services-list div:hover {
+  background-color: #0c2c48;
+  transform: scale(1.02);
+}
+
+#about {
+  transition: all 0.3s ease-in-out;
+}
+
+#about .text-base {
+  color: #ededed;
+  font-weight: 500;
+}
